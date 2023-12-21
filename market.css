@@ -1,0 +1,161 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;   
+}
+body{
+    background-color: #FF6969;
+}
+
+.container{
+    padding: 20px ;
+}
+.logo{
+    width: 10%;
+    margin-left: 45%;
+}
+
+.img{
+    height: 90px;
+}
+
+h1{
+    margin-left: 43%;
+    font-size: 50px;
+}
+
+span{
+    display: flex;
+    font-size: 33px;
+    margin-left: 50%;
+}
+
+.item{
+    background-color: rgba(0, 0, 0, 0.703);
+    margin: 30px;
+    color: white;
+    border-radius: 10px;
+    width:20em;
+    box-shadow: 0 -5px 30px rgba(1, 1, 1, 0.744);
+    border-radius: 10px;
+    padding: 35px;
+    margin: 20px;
+    transition: 0.5s ease;
+    padding-right: 20px;
+}
+
+.title{
+    font-size: 30px;
+
+}
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(550px,1fr));
+}
+
+button{
+    border: none;
+    width: 75px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+
+button:hover{
+    transition: 0.4s ease;
+    cursor: pointer;
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.lg{
+    width: 30%;
+    padding: 30px;
+}
+.payment{
+    width: 400px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.861);
+    color: #FF6969;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 18px 50px;
+    box-shadow: 10px 8px 8px rgba(86, 80, 80, 0.766);
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+}
+
+.paytitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF6969;
+    padding-left: 80px;
+}
+
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.cardInfo input{
+    width: 20%;
+    margin: 10px;
+}
+
+.close{
+    width: 20px;
+    height: 25px;
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    border-radius: 8px;
+    right: 0;
+    margin-right: 10px;
+}
+
+.close:hover{
+    cursor: pointer;
+    background-color: black;
+    color: red;
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.send:hover{
+    background-color: green;
+    color: white;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.card{
+    background-color: rgba(224, 13, 13, 0.763);
+    height: 100vh;
+    top: 0;
+    position:fixed;
+    width: 400px;
+    transition: 0.3s;
+    right: 100%;
+    font-size: 40px;
+}
+
+.active .card{
+    right: calc(100%-400px);
+}
+
+.active .container{
+    transform: translateX(-400px);
+    transition: 0.4s;
+}
